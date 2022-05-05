@@ -15,7 +15,7 @@ const swaggerDocument = yaml.load(path.resolve('./swagger.yaml'));
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-app.get('/api/v2/weather/:location', getLocationWeather);
+app.get('/weather/:location', getLocationWeather);
 
 app.listen(PORT, () => {
   console.log(`Yara Works API listening on port ${PORT}`)

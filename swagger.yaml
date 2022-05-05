@@ -19,7 +19,7 @@ tags:
 schemes:
 - "http"
 paths:
-  /api/v2/weather/{location}:
+  /weather/{location}:
     get:
       tags:
       - "weather"
