@@ -3,7 +3,7 @@ A simple web API that returns the weather for a provided city.
 
 ## tl;dr;
 ```
- npm install; npm run build; npm start;
+ npm install; npm start;
 ```
 
 ## Requirements
@@ -23,5 +23,7 @@ A simple web API that returns the weather for a provided city.
 1. Run `npm start`
 2. App should be running on **[localhost:3000/](http://localhost:3000/)**
 
-# Test the app
+## Test the app
 1. Go to route **[localhost:3000/weather/Toronto](localhost:3000/weather/Toronto)** to get weather in **Toronto**
+
+
