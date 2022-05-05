@@ -27,8 +27,7 @@ A simple web API that returns the weather for a provided city.
 1. Go to route **[localhost:3000/api/v2/weather/Toronto](http://localhost:3000/api/v2/weather/Toronto)** to get weather in **Toronto**
 
 # Swagger
-1. Run the following command `npm run swagger:serve` to serve the swagger UI.
-2. The swagger UI will be available at **[localhost:3000/api-docs](http://localhost:3000/api-docs)**
+1. The swagger UI will be available at **[localhost:3000/api-docs](http://localhost:3000/api-docs)**
 
 **NOTE** There are some CORS issues with the Swagger UI so the endpoint will not function from the Swagger UI.
 

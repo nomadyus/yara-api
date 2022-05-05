@@ -11,8 +11,7 @@
     "build": "npx tsc -p tsconfig.json",
     "prestart": "npm run test; npm run build",
     "start": "node dist/app.js",
-    "dev": "concurrently \"npx tsc -p tsconfig.json --watch\" \"nodemon -q dist/app.js\"",
-    "swagger:serve": "npx swagger project start"
+    "dev": "concurrently \"npx tsc -p tsconfig.json --watch\" \"nodemon -q dist/app.js\""
   },
   "keywords": [
     "city",
@@ -35,7 +34,6 @@
     "concurrently": "^7.1.0",
     "jest": "^28.0.3",
     "nodemon": "^2.0.16",
-    "swagger": "^0.7.5",
     "ts-jest": "^28.0.1",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.4"
