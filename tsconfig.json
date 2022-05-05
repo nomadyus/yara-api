@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "allowJs": true,
+        "target": "es5",
+        "esModuleInterop": true,
+        "types": ["node", "jest"],
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": ["./src/**/*"],
+    "exclude": [
+        "dist",
+        "**/*.spec.ts", "**/*.spec.js", "**/*.test.*", "**/__mocks__/*", "**/__tests__/*",
+        "../node_modules"
+    ]
+}
