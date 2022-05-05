@@ -4,8 +4,13 @@ export type WeatherResult = {
     main: string;
     description: string;
     temperature: number;
+    feelsLike: number;
     pressure: number;
     humidity: number;
+}
+
+export type ErrorResult = {
+    msg: string;
 }
 
 const handleError = (error: AxiosError) => {
@@ -19,13 +24,15 @@ const handleError = (error: AxiosError) => {
     }
 }
 
-const getCityWeather = (city: string): Promise<WeatherResult | { msg: string }> => {
+const getCityWeather = (city: string): Promise<WeatherResult | ErrorResult> => {
     const appConfig = {
         weatherURL: process.env.OPEN_WEATHER_API_URL,
         apiKey: process.env.OPEN_WEATHER_API_KEY
     }
 
-    const getCityWeatherUrl = 'asd'+ appConfig.weatherURL.replace('{city}', city).replace('{key}', appConfig.apiKey)
+    const getCityWeatherUrl = appConfig.weatherURL.replace('{city}', city).replace('{key}', appConfig.apiKey)
+
+    const errorResult = { msg: 'Unable to fetch weather' }
 
     return new Promise((resolve, reject) => {
         axios.get(getCityWeatherUrl)
@@ -35,17 +42,18 @@ const getCityWeather = (city: string): Promise<WeatherResult | { msg: string }> 
                         main: response.data.weather[0].main,
                         description: response.data.weather[0].description,
                         temperature: response.data.main.temp,
+                        feelsLike: response.data.main.feels_like,
                         pressure: response.data.main.pressure,
                         humidity: response.data.main.humidity,
                     }
                     resolve(result);
                 } else {
-                    reject({ msg: 'Unable to fetch weather'});
+                    reject(errorResult);
                 }
             })
             .catch(error => {
                 handleError(error)
-                reject({ msg: 'Unable to fetch weather' });
+                reject(errorResult);
             })
     });
 

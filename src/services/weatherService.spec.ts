@@ -21,6 +21,7 @@ describe('getCityWeather', () => {
                 ],
                 main: {
                     temp: 280.32,
+                    feelsLike: 280.32,
                     pressure: 1012,
                     humidity: 81,
                     temp_min: 279.15,
@@ -33,6 +34,7 @@ describe('getCityWeather', () => {
             main: mockSuccessfulResponse.data.weather[0].main,
             description: mockSuccessfulResponse.data.weather[0].description,
             temperature: mockSuccessfulResponse.data.main.temp,
+            feelsLike: mockSuccessfulResponse.data.main.feelsLike,
             pressure: mockSuccessfulResponse.data.main.pressure,
             humidity: mockSuccessfulResponse.data.main.humidity,
         }
