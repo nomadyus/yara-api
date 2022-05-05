@@ -17,7 +17,7 @@ A simple web API that returns the weather for a provided city.
 2. Clone this repo
 3. In this project's directory, run `npm install` to install dependencies
 4. Run the command `npm run build` to build the application
-5. Duplicate the `.env.example` file as `.env` file and provide the required configurations. Reach out to a team member to securely get the secrets.
+5. Duplicate the `.env.example` file as `.env` file and use the provided configurations
 
 ## Serve the app
 1. Run `npm start`
