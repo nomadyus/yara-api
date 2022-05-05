@@ -9,8 +9,7 @@ info:
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "localhost"
-basePath: "/api/v2"
+host: "localhost:3000"
 tags:
 - name: "weather"
   description: "Everything about the weather"
@@ -20,7 +19,7 @@ tags:
 schemes:
 - "http"
 paths:
-  /weather/{location}:
+  /api/v2/weather/{location}:
     get:
       tags:
       - "weather"

@@ -29,6 +29,4 @@ A simple web API that returns the weather for a provided city.
 # Swagger
 1. The swagger UI will be available at **[localhost:3000/api-docs](http://localhost:3000/api-docs)**
 
-**NOTE** There are some CORS issues with the Swagger UI so the endpoint will not function from the Swagger UI.
-
 
