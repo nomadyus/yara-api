@@ -24,7 +24,7 @@ A simple web API that returns the weather for a provided city.
 2. App should be running on **[localhost:3000/](http://localhost:3000/)**
 
 ## Test the app
-1. Go to route **[localhost:3000/api/v2/weather/Toronto](http://localhost:3000/api/v2/weather/Toronto)** to get weather in **Toronto**
+1. Go to route **[localhost:3000/weather/Toronto](http://localhost:3000/weather/Toronto)** to get weather in **Toronto**
 
 # Swagger
 1. The swagger UI will be available at **[localhost:3000/api-docs](http://localhost:3000/api-docs)**
